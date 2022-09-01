@@ -60,6 +60,9 @@ public class MainActivity extends AppCompatActivity {
                     String encrypted = null;
                     encrypted = AESUtil.encrypt(editMobileNumber.getText().toString().trim());
                     output.setText(encrypted);
+                       // encrypted = CryptoHandler.encrypt(editMobileNumber.getText().toString().trim());
+
+
                     Log.e("out",output.getText().toString().trim());
                 }
                 else{
